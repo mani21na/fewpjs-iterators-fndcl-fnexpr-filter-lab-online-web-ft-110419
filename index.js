@@ -2,3 +2,7 @@
 function findMatching(drivers, string) {
   return drivers.filter( d => d.toLoweCase() === string.toLoweCase() )
 }
+
+findMatching = (drivers, string) => {
+  return drivers.filter(driver => driver.toLowerCase() === string.toLowerCase())
+}
